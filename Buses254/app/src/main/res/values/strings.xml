@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Buses254</string>
+    <string name="title_activity_menu_options">menuOptions</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_one_way_trip">Purchase Ticket</string>
+    <string name="one_way_trip">One Way Trip</string>
+    <string name="return_trip">Return Trip</string>
+    <string name="dateoftravel">Date Of Travel</string>
+    <string name="destination">Destination</string>
+    <string name="time_of_travel">Time Of Travel</string>
+    <string name="check_availability">Check Availability</string>
+    <string name="_00_00">00:00</string>
+
+    <string-array name="locations">
+        <item> - Select Location - </item>
+        <item> Mombasa </item>
+        <item> Kisumu</item>
+        <item> Nairobi </item>
+        <item> Nakuru </item>
+
+    </string-array>
+
+    <string-array name="DepartLocations">
+        <item> - Select Location - </item>
+        <item> Mombasa </item>
+        <item> Kisumu</item>
+        <item> Nairobi </item>
+        <item> Nakuru </item>
+
+    </string-array>
+
+    <string-array name="TravelTime">
+        <item> - Select Time - </item>
+        <item> 6:00 AM </item>
+        <item> 7:00 AM </item>
+        <item> 8:00 AM </item>
+        <item> 9:00 AM </item>
+        <item> 10:00 AM </item>
+        <item> 11:00 AM </item>
+        <item> 12:00 PM </item>
+        <item> 1:00 PM </item>
+        <item> 2:00 PM </item>
+        <item> 3:00 PM </item>
+        <item> 4:00 PM </item>
+        <item> 5:00 PM </item>
+        <item> 6:00 PM </item>
+        <item> 7:00 PM </item>
+        <item> 8:00 PM </item>
+        <item> 9:00 PM </item>
+    </string-array>
+    <string name="title_activity_return_trip">ReturnTrip</string>
+    <string name="title_activity_nav_drawer">navDrawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

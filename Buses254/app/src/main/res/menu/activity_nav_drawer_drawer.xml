@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item  android:title="News Feed"
+            android:id="@+id/nav_newsfeed"
+            android:icon="@drawable/ic_coins"
+            />
+
+        <item  android:title="Buy Ticket"
+               android:id="@+id/nav_coins"
+               android:icon="@drawable/ic_coins"
+            >
+            <menu>
+            <item
+                android:id="@+id/nav_oneWay"
+                android:icon="@drawable/ic_oneway"
+                android:title="One Way Trip" />
+
+                <item
+                    android:id="@+id/nav_returnTrip"
+                    android:icon="@drawable/ic_returntrip"
+                    android:title="Return Trip" />
+            </menu>
+            </item>
+
+        <item
+            android:id="@+id/nav_tickets2"
+            android:icon="@drawable/ic_ticket"
+            android:title="My Tickets" />
+        <item
+            android:id="@+id/nav_profile2"
+            android:icon="@drawable/ic_profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_logout2"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

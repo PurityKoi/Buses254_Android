@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cd_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBusId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvCountyDept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Departure County"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvCountyDest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination County"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvTravelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Travel"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvTravelTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time of Travel"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvTravelCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travel Cost"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

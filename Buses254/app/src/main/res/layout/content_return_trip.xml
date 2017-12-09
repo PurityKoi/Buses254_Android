@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_return_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.buses254.ReturnTrip"
+    tools:showIn="@layout/activity_return_trip">
+
+
+    <Button
+        android:text="Check Availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btCheckAvail2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/btReturnTrip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp">
+
+        <TextView
+            android:text="Depart From"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRTdepart"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+           />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinRTDept"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvRTdepart"
+            android:layout_marginRight="0dp"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinRTDest"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvRTdestination"
+            android:layout_marginRight="0dp"
+            />
+
+        <TextView
+            android:text="Destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRTdestination"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/tvRTdepart"
+            android:layout_alignStart="@+id/tvRTdepart" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:text="Return Trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btReturnTrip"
+        android:layout_alignBaseline="@+id/btOneWayTrip"
+        android:layout_alignBottom="@+id/btOneWayTrip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="One Way Trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/btOneWayTrip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:background="@color/lighterCyan"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/btCheckAvail2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:text="Date of Departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tvDeptDate"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/etDeptDate"
+                android:focusable="false"
+                android:hint="mm/dd/yyyy"
+                android:layout_alignTop="@+id/tvDeptDate"
+                android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+                 />
+
+
+            <TextView
+             android:text="Time of Departure"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tvDeptDate"
+             android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+             android:id="@+id/tvDeptTime"
+             android:textSize="16sp" />
+
+
+
+            <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvDeptTime"
+            android:layout_marginTop="30dp"
+            android:id="@+id/spinRTDeptTime"
+                android:layout_alignLeft="@+id/spinRTRetTime"
+                android:layout_alignStart="@+id/spinRTRetTime"
+                android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:text="Date of Return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvReturnDate"
+            android:textSize="16sp"
+            android:layout_below="@+id/tvDeptTime"
+           android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:layout_alignTop="@+id/tvReturnDate"
+            android:layout_alignParentRight="true"
+            android:id="@+id/etReturnDate"
+            android:hint="mm/dd/yyyy"
+            android:layout_marginRight="20dp"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinRTRetTime"
+            android:layout_alignTop="@+id/tvReturnTime"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+         android:text="Time of Return"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+            android:id="@+id/tvReturnTime"
+         android:textSize="16sp"
+            android:layout_below="@+id/tvReturnDate"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
